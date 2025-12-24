@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Protegida</title>
+
+  <style>
+      /* Inicialmente, o conteúdo está escondido */
+      #conteudo {
+          display: none;
+          animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Estilo da página */
+      body {
+        background: linear-gradient(135deg, #4b0f1f, #8b1e3f);
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: auto;
+        line-height: 1.6;
+      }
+
+      audio {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 0.9em;
+        opacity: 0.7;
+      }
+  </style>
+
+  <script>
+      function verificarSenha() {
+        var dica = "TÍTULOS GARANTIDO + ANO DVD HISTÓRICO";
+        var senha = prompt("Digite a senha:\n(Dica: " + dica + ")");
+
+        if (senha === "332025") {
+            alert("Acesso liberado!");
+            document.getElementById("conteudo").style.display = "block";
+        } else {
+            alert("Senha incorreta! Recarregue a página para tentar novamente.");
+        }
+      }
+  </script>
+</head>
+
+<body onload="verificarSenha()">
+
+  <div id="conteudo">
+    <h1>✨ Feliz Natal e um próspero Ano Novo meu bem ❤️✨</h1>
+
+    <p>
+      Que o próximo ano venha cheio de saúde, paz e novas oportunidades.<br>
+      Que cada sonho encontre um caminho e que nunca falte esperança no coração.<br>
+      Obrigado por fazer parte da minha história ❤️
+    </p>
+
+    <!-- ÁUDIO MANTIDO EXATAMENTE COMO VOCÊ PEDIU -->
+    <audio controls>
+      <source src="midia/mensagem.mp3.mpeg" controls autoplay>
+    </audio>
+
+    <p style="margin-top: 35px; font-size: 1.15em; line-height: 1.8;">
+      Oiiii… passei aqui para te desejar tudo de bom, de coração.<br>
+      Que 2026 seja <strong>O ANO</strong>, daquele jeito que a gente pede em silêncio.<br><br>
+
+      Obrigado por eu ter feito parte de um dos meus sonhos neste ano,<br>
+      e por termos compartilhado momentos tão bons e verdadeiros.<br><br>
+
+      Sei que me afastei logo depois, e foi por medo.<br>
+      Medo de sentir demais, medo de criar expectativas,<br>
+      medo de, sem querer, acabar estragando algo que era/é bonito de viver.<br><br>
+
+      Hoje percebo o quanto esse medo pode ter me feito perder você…<br>
+      talvez. E isso fica aqui, guardado, com sinceridade.<br><br>
+
+      Não sei como estaremos em 2026.<br>
+      Não sei com quem você estará, nem onde a vida vai nos levar.<br>
+      Mas, de todo o coração, quero que saiba:<br>
+      independentemente de tudo,<br>
+      eu estarei aqui.<br>
+      Você sabe onde me encontrar,<br>
+      e sabe onde estarei… kkk.<br><br>
+
+      <strong>Que você seja muito, muito feliz.</strong><br>
+      E que nunca esqueça que eu te amo ❤️❤️❤️<br><br>
+
+      Em qualquer estado, em qualquer fase,<br>
+      torcendo sempre por você.<br>
+      E NOVAMENTE que nunca esqueça que EU TE AMO ❤️❤️❤️<br><br>
+    </p>
+
+    <footer>
+      COM CARINHO DE UM DESCONHECIDO, BEM CONHECIDO ❤️
+    </footer>
+  </div>
+
+</body>
+</html>
